@@ -114,7 +114,7 @@ class OnvifFlowHandler(ConfigFlow, domain=DOMAIN):
     @override
     def async_get_options_flow(
         config_entry: ConfigEntry,
-    ) -> OnvifOptionsFlowHandler:
+    ) -> "OnvifOptionsFlowHandler":
         """Get the options flow for this handler."""
         return OnvifOptionsFlowHandler(config_entry)
 
