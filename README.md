@@ -45,5 +45,9 @@ H.265 (HEVC) is a highly efficient video codec, but it has some limitations:
 
 ## Credits
 
+This project is based on the Home Assistant ONVIF integration.
 This integration is a fork of the official Home Assistant ONVIF integration.
 The codebase is maintained by the Home Assistant community.
+
+Original source:
+https://github.com/home-assistant/core/tree/dev/homeassistant/components/onvif
