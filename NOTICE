@@ -1,0 +1,5 @@
+
+   This project is a modification of the Home Assistant ONVIF integration,
+   which is licensed under the Apache License, Version 2.0.
+
+   Original source: https://github.com/home-assistant/core/tree/dev/homeassistant/components/onvif
