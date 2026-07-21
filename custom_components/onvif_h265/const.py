@@ -9,7 +9,7 @@ from zeep.exceptions import Fault, TransportError
 
 LOGGER = logging.getLogger(__package__)
 
-DOMAIN = "onvif"
+DOMAIN = "onvif_h265"
 
 DEFAULT_PORT = 80
 DEFAULT_ARGUMENTS = "-pred 1"
