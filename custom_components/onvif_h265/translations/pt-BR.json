@@ -1,0 +1,134 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "O dispositivo já está configurado",
+      "already_in_progress": "A configuração já está em andamento",
+      "no_devices_found": "Nenhum dispositivo encontrado",
+      "no_h264": "Não havia streams H.264 ou H.265 disponíveis. Verifique a configuração de perfil no seu dispositivo.",
+      "no_mac": "Não foi possível configurar o ID único para o dispositivo ONVIF.",
+      "reauth_successful": "Reautenticação bem-sucedida"
+    },
+    "error": {
+      "auth_failed": "Não foi possível autenticar: {error}",
+      "cannot_connect": "Não foi possível conectar",
+      "no_onvif_service": "Nenhum serviço ONVIF encontrado. Verifique se o número da porta está correto.",
+      "onvif_error": "Erro ao configurar o dispositivo ONVIF: {error}. Verifique os logs para mais informações."
+    },
+    "step": {
+      "configure": {
+        "data": {
+          "host": "Host",
+          "name": "Nome",
+          "password": "Senha",
+          "port": "Porta",
+          "username": "Nome de usuário"
+        },
+        "data_description": {
+          "host": "O nome do host ou endereço IP do seu dispositivo ONVIF."
+        },
+        "title": "Configurar dispositivo ONVIF"
+      },
+      "configure_profile": {
+        "data": {
+          "include": "Criar entidade de câmera"
+        },
+        "description": "Criar entidade de câmera para {profile} na resolução {resolution}?",
+        "title": "Configurar perfis"
+      },
+      "device": {
+        "data": {
+          "host": "Selecionar dispositivo ONVIF descoberto"
+        },
+        "title": "Selecionar dispositivo ONVIF"
+      },
+      "reauth_confirm": {
+        "data": {
+          "password": "Senha",
+          "username": "Nome de usuário"
+        },
+        "description": "Alguns dispositivos rejeitarão a autenticação se a hora estiver fora de sincronia por mais de 5 segundos. Se a autenticação não for bem-sucedida, verifique a hora no dispositivo e tente novamente.",
+        "title": "Reautenticar o dispositivo ONVIF"
+      },
+      "user": {
+        "data": {
+          "auto": "Pesquisar automaticamente"
+        },
+        "description": "Ao selecionar **Enviar**, faremos uma pesquisa na sua rede por dispositivos ONVIF que suportam o Perfil S (incluindo H.265).\n\nAlguns fabricantes começaram a desativar o ONVIF por padrão. Certifique-se de que o ONVIF esteja habilitado na configuração da sua câmera.",
+        "title": "Configuração do dispositivo ONVIF"
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "autofocus": {
+        "name": "Foco automático"
+      },
+      "ir_lamp": {
+        "name": "Lâmpada IR"
+      },
+      "wiper": {
+        "name": "Limpador"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "onvif_devices": {
+        "data": {
+          "enable_webhooks": "Ativar webhooks",
+          "extra_arguments": "Argumentos extras do FFmpeg",
+          "rtsp_transport": "Mecanismo de transporte RTSP"
+        },
+        "sections": {
+          "more_options": {
+            "data": {
+              "use_wallclock_as_timestamps": "Usar relógio do sistema como timestamps"
+            },
+            "name": "Mais opções"
+          }
+        },
+        "title": "Opções do dispositivo ONVIF"
+      }
+    }
+  },
+  "services": {
+    "ptz": {
+      "description": "Se a sua câmera ONVIF suportar PTZ, você poderá girar, inclinar ou dar zoom na sua câmera.",
+      "fields": {
+        "continuous_duration": {
+          "description": "Defina o atraso do ContinuousMove em segundos antes de parar o movimento.",
+          "name": "Duração contínua"
+        },
+        "distance": {
+          "description": "Coeficiente de distância. Define o quanto o PTZ deve ser executado em uma solicitação.",
+          "name": "Distância"
+        },
+        "move_mode": {
+          "description": "Modo de movimento PTZ.",
+          "name": "Modo de movimento"
+        },
+        "pan": {
+          "description": "Direção de pan.",
+          "name": "Pan"
+        },
+        "preset": {
+          "description": "Token do perfil de predefinição PTZ. Define o token do perfil de predefinição que é executado com GotoPreset.",
+          "name": "Predefinição"
+        },
+        "speed": {
+          "description": "Coeficiente de velocidade. Define quão rápido o PTZ será executado.",
+          "name": "Velocidade"
+        },
+        "tilt": {
+          "description": "Direção de inclinação.",
+          "name": "Inclinação"
+        },
+        "zoom": {
+          "description": "Zoom.",
+          "name": "Zoom"
+        }
+      },
+      "name": "PTZ"
+    }
+  }
+}
