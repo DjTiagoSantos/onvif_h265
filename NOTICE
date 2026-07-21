@@ -42,14 +42,9 @@ Apache License, Version 2.0 referenced above.
 
 --------------------------------------------------------------------
 
-Licensing note
-
-This repository currently distributes the combined work under the
-MIT License (see LICENSE). Because the underlying code originates
-from an Apache License 2.0 project, the Apache 2.0 terms continue to
-apply to the unmodified portions regardless of the license file
-included here. To avoid ambiguity, licensing this repository under
-Apache License 2.0 instead of MIT is recommended.
+This repository is distributed under the Apache License, Version 2.0
+(see LICENSE), the same license used by the upstream Home Assistant
+project, so no separate or conflicting license terms apply.
 
 --------------------------------------------------------------------
 
