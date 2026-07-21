@@ -1,0 +1,134 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "already_in_progress": "Configuration flow is already in progress",
+      "no_devices_found": "No devices found",
+      "no_h264": "No H.264 or H.265 streams were found. Check the profile configuration on your device.",
+      "no_mac": "Could not set up a unique ID for the ONVIF device.",
+      "reauth_successful": "Re-authentication was successful"
+    },
+    "error": {
+      "auth_failed": "Unable to authenticate: {error}",
+      "cannot_connect": "Unable to connect",
+      "no_onvif_service": "No ONVIF service found. Verify the port number is correct.",
+      "onvif_error": "Error setting up the ONVIF device: {error}. Check the logs for more information."
+    },
+    "step": {
+      "configure": {
+        "data": {
+          "host": "Host",
+          "name": "Name",
+          "password": "Password",
+          "port": "Port",
+          "username": "Username"
+        },
+        "data_description": {
+          "host": "The hostname or IP address of your ONVIF device."
+        },
+        "title": "Configure ONVIF device"
+      },
+      "configure_profile": {
+        "data": {
+          "include": "Create camera entity"
+        },
+        "description": "Create a camera entity for {profile} at {resolution} resolution?",
+        "title": "Configure profiles"
+      },
+      "device": {
+        "data": {
+          "host": "Select discovered ONVIF device"
+        },
+        "title": "Select ONVIF device"
+      },
+      "reauth_confirm": {
+        "data": {
+          "password": "Password",
+          "username": "Username"
+        },
+        "description": "Some devices will reject authentication if the time is out of sync by more than 5 seconds. If authentication is not successful, check the time on the device and try again.",
+        "title": "Reauthenticate ONVIF device"
+      },
+      "user": {
+        "data": {
+          "auto": "Search automatically"
+        },
+        "description": "By selecting **Submit**, we will scan your network for ONVIF devices that support Profile S (including H.265).\n\nSome manufacturers have started disabling ONVIF by default. Make sure ONVIF is enabled in your camera's configuration.",
+        "title": "ONVIF device setup"
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "autofocus": {
+        "name": "Autofocus"
+      },
+      "ir_lamp": {
+        "name": "IR lamp"
+      },
+      "wiper": {
+        "name": "Wiper"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "onvif_devices": {
+        "data": {
+          "enable_webhooks": "Enable webhooks",
+          "extra_arguments": "Extra FFmpeg arguments",
+          "rtsp_transport": "RTSP transport mechanism"
+        },
+        "sections": {
+          "more_options": {
+            "data": {
+              "use_wallclock_as_timestamps": "Use system clock as timestamps"
+            },
+            "name": "More options"
+          }
+        },
+        "title": "ONVIF device options"
+      }
+    }
+  },
+  "services": {
+    "ptz": {
+      "description": "If your ONVIF camera supports PTZ, you can pan, tilt, or zoom your camera.",
+      "fields": {
+        "continuous_duration": {
+          "description": "Set the ContinuousMove delay in seconds before stopping movement.",
+          "name": "Continuous duration"
+        },
+        "distance": {
+          "description": "Distance coefficient. Sets how far the PTZ should move in a single request.",
+          "name": "Distance"
+        },
+        "move_mode": {
+          "description": "PTZ movement mode.",
+          "name": "Move mode"
+        },
+        "pan": {
+          "description": "Pan direction.",
+          "name": "Pan"
+        },
+        "preset": {
+          "description": "PTZ preset profile token. Sets the preset profile token that is run with GotoPreset.",
+          "name": "Preset"
+        },
+        "speed": {
+          "description": "Speed coefficient. Sets how fast the PTZ will move.",
+          "name": "Speed"
+        },
+        "tilt": {
+          "description": "Tilt direction.",
+          "name": "Tilt"
+        },
+        "zoom": {
+          "description": "Zoom.",
+          "name": "Zoom"
+        }
+      },
+      "name": "PTZ"
+    }
+  }
+}
