@@ -3,7 +3,8 @@
 from collections.abc import Mapping
 import logging
 from pprint import pformat
-from typing import Any, override
+from typing import Any
+from typing_extensions import override
 from urllib.parse import urlparse
 
 from onvif.util import is_auth_error, stringify_onvif_error
