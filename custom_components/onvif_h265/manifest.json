@@ -12,19 +12,19 @@
     }
   ],
   "documentation": "https://github.com/DjTiagoSantos/onvif_h265",
-  "issue_tracker": "https://github.com/DjTiagoSantos/onvif_h265/issues",
   "integration_type": "device",
   "iot_class": "local_push",
+  "issue_tracker": "https://github.com/DjTiagoSantos/onvif_h265/issues",
   "loggers": [
     "onvif",
     "wsdiscovery",
     "zeep"
   ],
   "requirements": [
-  "onvif-zeep-async==4.2.1",
-  "onvif_parsers==2.3.0",
-  "WSDiscovery==2.1.2",
-  "typing_extensions>=4.10.0"
-],
+    "onvif-zeep-async==4.2.1",
+    "onvif_parsers==2.3.0",
+    "WSDiscovery==2.1.2",
+    "typing_extensions>=4.10.0"
+  ],
   "version": "1.0.0"
 }
